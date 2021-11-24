@@ -7,9 +7,7 @@
 
 .hero {
   background-image: url("./images/back.jpg");
-  height: 100vh;
   background-size: cover;
-  width: 100;
   height: 800px;
   position: relative;
   overflow: hidden;
@@ -101,6 +99,23 @@
   text-align: center;
   margin: 0 auto 35px auto;
   width: 50%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+img {
+  max-width: 100%;
+  padding: 60px;
+}
+.image {
+  flex-basis: 150%;
+}
+.text {
+  font-size: 20px;
+  padding-left: 20px;
 }
 
 .about p {
