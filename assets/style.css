@@ -5,6 +5,10 @@
   font-family: Anonymous Pro;
 }
 
+header {
+  padding: 20px 35px;
+}
+
 .hero {
   background-image: url("./images/back.jpg");
   background-size: cover;
@@ -18,14 +22,19 @@
 
 .hero nav ul {
   list-style: none;
-  text-align: right;
-  padding: 11px;
-  margin: 0;
-  position: relative;
+  text-align: left;
+  padding: 7px;
+  margin: 10px;
+  display: inline-block;
+  position: fixed;
+  right: 1%;
+  z-index: auto;
+  background-color: #bdcfd5;
+  z-index: 9999;
+  border-radius: 5%;
 }
 
 .hero nav li {
-  font-family: "Oswald", sans-serif;
   font-size: 1.2em;
   line-height: 40px;
   height: 40px;
@@ -56,14 +65,14 @@
 .content {
   color: #fbfcfd;
   position: absolute;
-  top: 45%;
-  left: 1%;
+  top: 35%;
+  left: 3%;
   transform: translatey(-50%);
   z-index: 2;
 }
 
 .content div h1 {
-  font-size: 40px;
+  font-size: 50px;
 }
 
 .boldorange {
@@ -109,13 +118,13 @@
   width: 50%;
 }
 
-h2::before {
+#aboutme h2::before {
   content: "";
   position: absolute;
   width: 100px;
   height: 3px;
   background-color: #709eae;
-  bottom: 190px;
+  bottom: 160px;
   left: 50%;
   transform: translateX(-50%);
   animation: animate 10s linear infinite;
@@ -136,9 +145,7 @@ img {
 
 .text {
   text-align: justify;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-size: 20px;
+  font-size: 30px;
   line-height: 165%;
 }
 
@@ -176,6 +183,6 @@ img {
     width: 200px;
   }
   100% {
-    width: 100px;
+    width: 150px;
   }
 }
