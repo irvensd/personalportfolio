@@ -2,13 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: Anonymous Pro;
 }
 
 .hero {
   background-image: url("./images/back.jpg");
   background-size: cover;
+  background-attachment: fixed;
+  background-position: 100%;
   height: 800px;
+  width: 90%;
   position: relative;
   overflow: hidden;
 }
@@ -65,6 +68,12 @@
 
 .boldorange {
   color: #e6b7a3;
+  position: relative;
+  left: 20px;
+}
+.text-align {
+  position: relative;
+  left: 20px;
 }
 
 .content .row {
@@ -94,39 +103,79 @@
 .section-title {
   font-size: 55px;
   color: #709eae;
-  border-bottom: 3px solid;
   padding-bottom: 20px;
   text-align: center;
   margin: 0 auto 35px auto;
   width: 50%;
 }
 
+h2::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background-color: #709eae;
+  bottom: 190px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: animate 10s linear infinite;
+}
+
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 15px auto;
+  width: 50%;
+  padding: 10px;
 }
+
 img {
-  max-width: 100%;
-  padding: 60px;
+  float: left;
+  width: 300px;
+  height: 260px;
+  padding: 0 10px 0 0;
 }
-.image {
-  flex-basis: 150%;
-}
+
 .text {
+  text-align: justify;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-size: 20px;
-  padding-left: 20px;
+  line-height: 165%;
 }
 
 .about p {
   line-height: 1.7;
   color: #e6b7a3;
-  width: 80%;
-  font-size: 20px;
+  width: 70%;
+  font-size: 25px;
   margin: 0 auto;
   text-align: center;
 }
 
-.blue {
-  color: #709eae;
+.about {
+  background-color: #709eae;
+}
+
+.about h2 {
+  color: white;
+}
+
+.photo-gallery {
+  width: 100%;
+}
+
+.pic {
+  position: 0;
+  height: 230px;
+}
+
+@keyframes animate {
+  0% {
+    width: 100px;
+  }
+  50% {
+    width: 200px;
+  }
+  100% {
+    width: 100px;
+  }
 }
