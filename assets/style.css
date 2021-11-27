@@ -15,7 +15,7 @@ header {
   background-attachment: fixed;
   background-position: 100%;
   height: 800px;
-  width: 90%;
+  width: 95%;
   position: relative;
   overflow: hidden;
 }
@@ -27,7 +27,7 @@ header {
   margin: 10px;
   display: inline-block;
   position: fixed;
-  right: 1%;
+  right: 11%;
   z-index: auto;
   background-color: #bdcfd5;
   z-index: 9999;
@@ -66,7 +66,7 @@ header {
   color: #fbfcfd;
   position: absolute;
   top: 35%;
-  left: 3%;
+  left: 10%;
   transform: translatey(-50%);
   z-index: 2;
 }
@@ -79,27 +79,6 @@ header {
   color: #e6b7a3;
   position: relative;
   left: 20px;
-}
-.text-align {
-  position: relative;
-  left: 20px;
-}
-
-.content .row {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 30px;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.content .row a {
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 20px;
-  margin-right: 20px;
-  border: 2px solid #fff;
-  border-radius: 20px;
 }
 
 .content .row a:hover {
@@ -131,48 +110,127 @@ header {
 }
 
 .container {
-  margin: 15px auto;
-  width: 50%;
-  padding: 10px;
+  flex-direction: column;
+  position: relative;
+  left: 30%;
 }
 
-img {
-  float: left;
-  width: 300px;
-  height: 260px;
-  padding: 0 10px 0 0;
+.irvens-image {
+  max-width: 100%;
+  flex-direction: row;
+  margin: 0 auto 35px auto;
+  width: 40%;
 }
 
 .text {
-  text-align: justify;
-  font-size: 30px;
-  line-height: 165%;
+  font-size: 20px;
+  line-height: 250%;
 }
 
-.about p {
-  line-height: 1.7;
-  color: #e6b7a3;
-  width: 70%;
-  font-size: 25px;
-  margin: 0 auto;
-  text-align: center;
+.text p {
+  margin: 0 10px 20px 160px;
+  position: relative;
+  left: -29%;
 }
+
+/* The start of MY LATEST WORK SECTION */
 
 .about {
   background-color: #709eae;
+  height: 65px;
+  width: 93%;
+  margin-top: 25px;
+  position: relative;
 }
 
 .about h2 {
   color: white;
 }
 
-.photo-gallery {
-  width: 100%;
+.img-gallery {
+  width: 90%;
+  margin: 100px auto 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+  grid-gap: 30px;
+  flex-direction: row;
 }
 
-.pic {
-  position: 0;
-  height: 230px;
+.img-gallery img {
+  height: auto;
+  width: 150%;
+  cursor: pointer;
+  border: 5px solid #d9d9d9;
+  padding: 5px;
+}
+
+.img-gallery img:hover {
+  transform: scale(0.8) rotate(-15deg);
+  border-radius: 20px;
+  box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2);
+  opacity: 0.7;
+}
+
+.caption {
+  text-align: center;
+}
+.about p {
+  text-align: center;
+}
+
+/*Contact Section */
+
+.contact {
+  background: #709eae;
+}
+
+.contact h1 {
+  color: white;
+  text-align: center;
+  font-size: 55px;
+}
+
+.contact p {
+  text-align: center;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-info > * {
+  flex: 1;
+  margin: 20px;
+}
+
+.contact-info div {
+  color: white;
+}
+
+.contact-info h3,
+a {
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+
+.contact-info p,
+.contact-info address {
+  margin: 20px o;
+  line-height: 1.5;
+  font-size: 20px;
+  font-style: normal;
+}
+
+address {
+  text-align: center;
+}
+
+.flex-row {
+  display: flex;
+  text-align: center;
 }
 
 @keyframes animate {
@@ -184,5 +242,318 @@ img {
   }
   100% {
     width: 150px;
+  }
+}
+/*End of Contact Section */
+
+/*Media Query for smaller desktop screens and smaller */
+@media screen and (max-width: 980px) {
+  .hero {
+    background-position: 5%;
+    width: 95%;
+  }
+
+  .hero nav ul {
+    text-align: center;
+    top: auto;
+    right: -2%;
+    position: absolute;
+    z-index: 9999;
+  }
+
+  .hero nav li {
+    font-size: 1.2em;
+    line-height: 40px;
+    height: 40px;
+    display: inline;
+  }
+
+  .hero nav a {
+    transition: 2.3s;
+    padding: 5px 20px;
+    font-size: 13px;
+    border: 0.5px solid #fff;
+    border-radius: 15px;
+  }
+
+  .content {
+    color: #fbfcfd;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    z-index: 2;
+  }
+
+  .content div h1 {
+    font-size: 55px;
+  }
+
+  /* About Me Section */
+  #aboutme {
+    height: 50px;
+    width: 90%;
+  }
+
+  .section-title {
+    font-size: 55px;
+    color: #709eae;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 90%;
+  }
+
+  #aboutme h2::before {
+    bottom: -230px;
+    position: absolute;
+    left: 45%;
+  }
+
+  .container {
+    flex-direction: column;
+    position: relative;
+    left: 15%;
+  }
+
+  .irvens-image {
+    max-width: 100%;
+    flex-direction: row;
+    margin: 0 auto 35px auto;
+    width: 60%;
+  }
+
+  .text {
+    font-size: 20px;
+    line-height: 250%;
+  }
+
+  .text p {
+    margin: 0 10px 20px 160px;
+    position: relative;
+    left: -25%;
+  }
+
+  /*My Latest work section */
+
+  .img-gallery {
+    position: relative;
+    display: flex;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 30px;
+  }
+
+  .img-gallery img {
+    height: auto;
+    width: 150%;
+    cursor: pointer;
+    border: 5px solid #d9d9d9;
+    padding: 5px;
+  }
+}
+
+/*MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+  .hero {
+    background-position: 10%;
+  }
+
+  .content {
+    color: #fbfcfd;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    z-index: 2;
+  }
+
+  #aboutme h2::before {
+    bottom: -230px;
+  }
+
+  .container {
+    padding: 35px;
+  }
+
+  .irvens-image {
+    max-width: 100%;
+    flex-direction: row;
+    margin: 0 auto 35px auto;
+    width: 60%;
+  }
+
+  .text {
+    font-size: 20px;
+    line-height: 250%;
+  }
+
+  .text p {
+    margin: 0 10px 20px 160px;
+    position: relative;
+    left: -25%;
+  }
+
+  /*My Latest work section */
+
+  div .img-gallery {
+    width: 100%;
+    height: 200%;
+    margin: 150px auto 50px;
+    display: flex;
+  }
+
+  .img-gallery img {
+    height: auto;
+    width: 100%;
+    cursor: pointer;
+    border: 5px solid #d9d9d9;
+    padding: 5px;
+  }
+}
+
+/* Media Query for mobile phones and smaller */
+
+@media screen and (max-width: 575px) {
+  .hero nav ul {
+    text-align: center;
+    top: auto;
+    right: -2%;
+    position: absolute;
+    z-index: 9999;
+  }
+
+  .hero nav li {
+    font-size: 1.2em;
+    line-height: 20px;
+    height: 20px;
+    display: inline;
+  }
+
+  .hero nav a {
+    transition: 2.3s;
+    padding: 1px 10px;
+    font-size: 10px;
+    border: 0.5px solid #fff;
+    border-radius: 15px;
+  }
+  .content {
+    color: #fbfcfd;
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    z-index: 2;
+  }
+
+  .content div h1 {
+    font-size: 40px;
+  }
+
+  /* About Me Section */
+
+  .container {
+    flex-direction: column;
+    position: relative;
+    left: 10%;
+  }
+
+  .text {
+    font-size: 20px;
+    line-height: 200%;
+  }
+
+  .text p {
+    margin: 0 10px 20px 160px;
+    position: relative;
+    left: -30%;
+  }
+
+  /*My Latest work section */
+
+  .img-gallery {
+    position: relative;
+    display: flex;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 30px;
+  }
+
+  .img-gallery img {
+    height: auto;
+    width: 150%;
+    cursor: pointer;
+    border: 5px solid #d9d9d9;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .hero {
+    background-position: 20%;
+  }
+
+  .hero nav li {
+    font-size: 1.2em;
+    line-height: 15px;
+    height: 15px;
+    display: inline;
+  }
+
+  .hero nav a {
+    transition: 2.3s;
+    padding: 1px 10px;
+    font-size: 7px;
+    border: 0.5px solid #fff;
+    border-radius: 15px;
+  }
+  .content {
+    color: #fbfcfd;
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    z-index: 2;
+  }
+
+  .content div h1 {
+    font-size: 40px;
+  }
+
+  /* About Me Section */
+
+  .container {
+    flex-direction: column;
+    position: relative;
+    left: 10%;
+  }
+
+  .text {
+    font-size: 20px;
+    line-height: 200%;
+  }
+
+  .text p {
+    margin: 0 10px 20px 160px;
+    position: relative;
+    left: -36%;
+    flex: 100%;
+  }
+
+  /*My Latest work section */
+
+  .img-gallery {
+    position: relative;
+    display: flex;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1500px, 1fr));
+    grid-gap: 10px;
+  }
+
+  .img-gallery img {
+    height: auto;
+    width: 110%;
+    cursor: pointer;
+    border: 5px solid #d9d9d9;
+    padding: 5px;
+    flex-direction: row;
   }
 }
