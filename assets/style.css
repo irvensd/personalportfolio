@@ -1,559 +1,97 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Anonymous Pro;
+*{
+  margin:0;
+  padding:0;
+  font-family: monoisome;
+}
+.hero {
+  /* background-image: url(./images/background.jpg); */
+  background-color: #082e4e;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  max-height: 80vh;
+  height: 100vh;
+}
+
+.logo {
+  position: absolute;
+    top: 2%;
+    left: 1%;
+    width: 80px;
 }
 
 header {
-  padding: 20px 35px;
-}
-
-.hero {
-  background-image: url("./images/back.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: 100%;
-  height: 800px;
-  width: 95%;
-  position: relative;
-  overflow: hidden;
-}
-
-.hero nav ul {
-  list-style: none;
-  text-align: left;
-  padding: 7px;
-  margin: 10px;
-  display: inline-block;
-  position: fixed;
-  right: 11%;
-  z-index: auto;
-  background-color: #bdcfd5;
-  z-index: 9999;
-  border-radius: 5%;
-}
-
-.hero nav li {
-  font-size: 1.2em;
-  line-height: 40px;
-  height: 40px;
-  display: inline;
-}
-
-.hero nav a {
-  text-decoration: none;
-  color: #fff;
-  transition: 0.3s;
-  right: 25ch;
-  margin-left: 2.5ch;
-  color: #f2f2f2;
-  padding: 10px 25px;
-  text-decoration: none;
-  font-size: 17px;
-  border: 1px solid #fff;
-  border-radius: 20px;
-  cursor: pointer;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.topnav a:hover {
-  background-color: transparent;
-  color: #e6b7a3;
-}
-
-.content {
-  color: #fbfcfd;
+  color:#008080;
   position: absolute;
-  top: 35%;
-  left: 10%;
-  transform: translatey(-50%);
-  z-index: 2;
-}
-
-.content div h1 {
-  font-size: 50px;
-}
-
-.boldorange {
-  color: #e6b7a3;
-  position: relative;
-  left: 20px;
-}
-
-.content .row a:hover {
-  background-color: transparent;
-  color: #e6b7a3;
-}
-
-/* The start of about me section */
-
-.section-title {
-  font-size: 55px;
-  color: #709eae;
-  padding-bottom: 20px;
-  text-align: center;
-  margin: 0 auto 35px auto;
-  width: 50%;
-}
-
-#aboutme h2::before {
-  content: "";
-  position: absolute;
-  width: 100px;
-  height: 3px;
-  background-color: #709eae;
-  bottom: 160px;
-  left: 50%;
-  transform: translateX(-50%);
-  animation: animate 10s linear infinite;
-}
-
-.container {
-  flex-direction: column;
-  position: relative;
-  left: 30%;
-}
-
-.irvens-image {
-  max-width: 100%;
-  flex-direction: row;
-  margin: 0 auto 35px auto;
-  width: 40%;
-}
-
-.text {
-  font-size: 20px;
-  line-height: 250%;
-}
-
-.text p {
-  margin: 0 10px 20px 160px;
-  position: relative;
-  left: -29%;
-}
-
-/* The start of MY LATEST WORK SECTION */
-
-.about {
-  background-color: #709eae;
-  height: 65px;
-  width: 93%;
-  margin-top: 25px;
-  position: relative;
-}
-
-.about h2 {
-  color: white;
-}
-
-.img-gallery {
-  width: 90%;
-  margin: 100px auto 50px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
-  grid-gap: 30px;
-  flex-direction: row;
-}
-
-.img-gallery img {
-  height: auto;
-  width: 150%;
-  cursor: pointer;
-  border: 5px solid #d9d9d9;
-  padding: 5px;
-}
-
-.img-gallery img:hover {
-  transform: scale(1.3) rotate(-1deg);
-  border-radius: 20px;
-  box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2);
-  opacity: 0.7;
-}
-
-.caption {
-  text-align: center;
-}
-.about p {
-  text-align: center;
-}
-
-/*Contact Section */
-
-.contact {
-  background: #709eae;
-}
-
-.contact h1 {
-  color: white;
-  text-align: center;
-  font-size: 55px;
-}
-
-.contact p {
-  text-align: center;
-}
-
-.contact-info {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.contact-info > * {
+  top: 45%;
+  left: 5%;
+  font-size: 40px;
   flex: 1;
-  margin: 20px;
 }
 
-.contact-info div {
-  color: white;
+.orange {
+  color: orange ;
 }
 
-.contact-info h3,
-a {
-  color: white;
-  font-size: 18px;
-  text-align: center;
+.hero h2 {
+  color:#008080;
+  position: absolute;
+  top: 70%;
+  left: 11%;
+  font-size: 40px;
+  flex-basis: 0%;
 }
 
-.contact-info p,
-.contact-info address {
-  margin: 20px o;
-  line-height: 1.5;
-  font-size: 20px;
-  font-style: normal;
+.developer {
+  position: absolute;
+  top: 72%;
+  left: 20%;
+  font-size: 70px;
+  flex-basis: 0%;
+}
+.container {
+  position: absolute;
+    margin: 20px;
+    width: auto;
+    top:2%;
+    right: 3%;
 }
 
-address {
-  text-align: center;
+.topnav {
+  overflow: hidden;
+  background-color:transparent;
 }
 
-.flex-row {
-  display: flex;
-  text-align: center;
-}
-
-@keyframes animate {
-  0% {
-    width: 100px;
-  }
-  50% {
-    width: 200px;
-  }
-  100% {
-    width: 150px;
-  }
-}
-/*End of Contact Section */
-
-/*Media Query for smaller desktop screens and smaller */
-@media screen and (max-width: 980px) {
-  .hero {
-    background-position: 5%;
-    width: 95%;
-  }
-
-  .hero nav ul {
+  /* Navbar links */
+  .topnav a {
+    margin-left: 1ch;
+    flex: auto;
+    color: #f2f2f2;
     text-align: center;
-    top: auto;
-    right: -2%;
-    position: absolute;
-    z-index: 9999;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-size: 17px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    cursor: pointer; 
+   
+  }
+  
+  .topnav a:hover {
+    background-color: transparent;
+    color: orange;
   }
 
-  .hero nav li {
-    font-size: 1.2em;
-    line-height: 40px;
-    height: 40px;
-    display: inline;
-  }
-
-  .hero nav a {
-    transition: 2.3s;
-    padding: 5px 20px;
-    font-size: 13px;
-    border: 0.5px solid #fff;
-    border-radius: 15px;
-  }
-
-  .content {
-    color: #fbfcfd;
-    position: absolute;
-    top: 50%;
-    left: 5%;
-    z-index: 2;
-  }
-
-  .content div h1 {
-    font-size: 55px;
-  }
-
-  /* About Me Section */
-  #aboutme {
-    height: 50px;
-    width: 90%;
-  }
-
-  .section-title {
-    font-size: 55px;
-    color: #709eae;
-    padding-bottom: 20px;
+  .aboutMe {
     text-align: center;
-    width: 90%;
   }
 
-  #aboutme h2::before {
-    bottom: -230px;
-    position: absolute;
-    left: 45%;
-  }
 
-  .container {
-    flex-direction: column;
-    position: relative;
-    left: 15%;
-  }
-
-  .irvens-image {
-    max-width: 100%;
-    flex-direction: row;
-    margin: 0 auto 35px auto;
-    width: 60%;
-  }
-
-  .text {
-    font-size: 20px;
-    line-height: 250%;
-  }
-
-  .text p {
-    margin: 0 10px 20px 160px;
-    position: relative;
-    left: -25%;
-  }
-
-  /*My Latest work section */
-
-  .img-gallery {
-    position: relative;
-    display: flex;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    grid-gap: 30px;
-  }
-
-  .img-gallery img {
-    height: auto;
-    width: 150%;
-    cursor: pointer;
-    border: 5px solid #d9d9d9;
-    padding: 5px;
-  }
-}
-
-/*MEDIA QUERY FOR TABLETS AND SMALLER */
-@media screen and (max-width: 768px) {
-  .hero {
-    background-position: 10%;
-  }
-
-  .content {
-    color: #fbfcfd;
-    position: absolute;
-    top: 70%;
-    left: 10%;
-    z-index: 2;
-  }
-
-  #aboutme h2::before {
-    bottom: -230px;
-  }
-
-  .container {
-    padding: 35px;
-  }
-
-  .irvens-image {
-    max-width: 100%;
-    flex-direction: row;
-    margin: 0 auto 35px auto;
-    width: 60%;
-  }
-
-  .text {
-    font-size: 20px;
-    line-height: 250%;
-  }
-
-  .text p {
-    margin: 0 10px 20px 160px;
-    position: relative;
-    left: -25%;
-  }
-
-  /*My Latest work section */
-
-  div .img-gallery {
-    width: 100%;
-    height: 200%;
-    margin: 150px auto 50px;
-    display: flex;
-  }
-
-  .img-gallery img {
-    height: auto;
-    width: 100%;
-    cursor: pointer;
-    border: 5px solid #d9d9d9;
-    padding: 5px;
-  }
-}
-
-/* Media Query for mobile phones and smaller */
-
-@media screen and (max-width: 575px) {
-  .hero nav ul {
+  .portfolio {
+    background-color: #082e4e;
+    color: #fff;
     text-align: center;
-    top: auto;
-    right: -2%;
-    position: absolute;
-    z-index: 9999;
   }
 
-  .hero nav li {
-    font-size: 1.2em;
-    line-height: 20px;
-    height: 20px;
-    display: inline;
-  }
 
-  .hero nav a {
-    transition: 2.3s;
-    padding: 1px 10px;
-    font-size: 10px;
-    border: 0.5px solid #fff;
-    border-radius: 15px;
-  }
-  .content {
-    color: #fbfcfd;
-    position: absolute;
-    top: 60%;
-    left: 10%;
-    z-index: 2;
-  }
-
-  .content div h1 {
-    font-size: 40px;
-  }
-
-  /* About Me Section */
-
-  .container {
-    flex-direction: column;
-    position: relative;
-    left: 10%;
-  }
-
-  .text {
-    font-size: 20px;
-    line-height: 200%;
-  }
-
-  .text p {
-    margin: 0 10px 20px 160px;
-    position: relative;
-    left: -30%;
-  }
-
-  /*My Latest work section */
-
-  .img-gallery {
-    position: relative;
-    display: flex;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    grid-gap: 30px;
-  }
-
-  .img-gallery img {
-    height: auto;
-    width: 150%;
-    cursor: pointer;
-    border: 5px solid #d9d9d9;
-    padding: 5px;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .hero {
-    background-position: 20%;
-  }
-
-  .hero nav li {
-    font-size: 1.2em;
-    line-height: 15px;
-    height: 15px;
-    display: inline;
-  }
-
-  .hero nav a {
-    transition: 2.3s;
-    padding: 1px 10px;
-    font-size: 7px;
-    border: 0.5px solid #fff;
-    border-radius: 15px;
-  }
-  .content {
-    color: #fbfcfd;
-    position: absolute;
-    top: 60%;
-    left: 10%;
-    z-index: 2;
-  }
-
-  .content div h1 {
-    font-size: 40px;
-  }
-
-  /* About Me Section */
-
-  .container {
-    flex-direction: column;
-    position: relative;
-    left: 10%;
-  }
-
-  .text {
-    font-size: 20px;
-    line-height: 200%;
-  }
-
-  .text p {
-    margin: 0 10px 20px 160px;
-    position: relative;
-    left: -36%;
-    flex: 100%;
-  }
-
-  /*My Latest work section */
-
-  .img-gallery {
-    position: relative;
-    display: flex;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(1500px, 1fr));
-    grid-gap: 10px;
-  }
-
-  .img-gallery img {
-    height: auto;
-    width: 110%;
-    cursor: pointer;
-    border: 5px solid #d9d9d9;
-    padding: 5px;
-    flex-direction: row;
-  }
-}
