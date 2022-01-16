@@ -1,12 +1,10 @@
 # personalportfolio
 
-Purpose :
+Purpose : A website that shows Irvens Dupuy's protfolio and the work that he's done in the past and his resume and his background.
 
-A website that shows Irvens Dupuy's protfolio and the work that he's done in the past and his resume and his background.
+The website was built with HTML and CSS.
 
-The website is desgined with a sleek and futuristic look. The whole purpose of the design was for it to look a certain way that websites don't usually look.
-
-The website was buiult with HTML and CSS.
+Deployed URL - https://irvensd.github.io/personalportfolio/
 
 Contribution :
 Irvens Dupuy
