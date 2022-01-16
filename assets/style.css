@@ -87,11 +87,53 @@ header {
     text-align: center;
   }
 
+  .paragraph {
+    color: orange;
+  }
+
 
   .portfolio {
     background-color: #082e4e;
     color: #fff;
     text-align: center;
+  }
+
+  .contact-me {
+    text-align: center;
+  }
+
+  .contact-form input, .contact-form textarea {
+    border: 1px solid #082e4e
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: #024e76;
+    width: 100%; 
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255, 0.75);
+  }
+  
+  .contact-form input:focus, .contact-form textarea:focus {
+    background-color: rgba(255,255,255, 1);
+  }
+  
+  
+  .contact-form button {
+    width: 100%;
+    border: none;
+    background: ##082e4e;
+    color: #082e4e;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+    border: 10px;
+  }
+  
+  .contact-form button:hover {
+    color: #fce138;
+    background: #39a6b2;
   }
 
 
